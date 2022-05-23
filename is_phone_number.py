@@ -1,3 +1,5 @@
+#Programa detecta se a string digitada é uma número de telefone (formato americano)
+
 def is_phone_number(text):
     if len(text) != 12:
         return False
