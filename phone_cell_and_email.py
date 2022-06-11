@@ -14,6 +14,14 @@ phone_regex(r'''(
     )''',re.VERBOSE)
 
 # bloco - regex celular
+cell_regex(r'''(
+    (\d{2}|\(\d{2}\))?             # código de área
+    (\s|-|\.)?                     # separador
+    (\d{5})                        # primeiros 5 dígitos
+    (\s|-|\.)                      # separador
+    (\d{4})                        # últimos 4 dígitos
+    (\s*(ext|x|ext.)\s*(\d{2,5)))? #extensão
+    ''',re.VERBOSE)
 
 # bloco - regex e-mail
 
